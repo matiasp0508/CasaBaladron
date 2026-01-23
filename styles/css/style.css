@@ -1,0 +1,179 @@
+/* Definición de colores de marca */
+:root {
+    --dorado: #c5a059;       /* Dorado elegante */
+    --gris-fondo: #121212;      /* Gris oscuro para fondos */
+    --negro-puro: #0a0a0a;  /* Negro profundo */
+    --dorado-hover: #e2c285; /* Dorado más claro para interacciones */
+}
+
+/* Fondo de la página */
+body {
+    background-color: var(--gris-fondo);
+    color: white;
+}
+
+/* Estilo para el nombre de la empresa */
+.brand-name {
+    font-family: 'Cinzel', serif; /* La fuente elegante */
+    color: var(--dorado) !important;
+    font-size: 1.8rem;            /* Un poco más grande */
+    font-weight: 700;
+    letter-spacing: 4px;          /* Espacio entre letras para dar aire */
+    text-transform: uppercase;    /* Siempre en mayúsculas */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sutil relieve */
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column;   /* Uno arriba del otro */
+    align-items: center;      /* Centrados entre sí */
+    justify-content: center;
+    line-height: 0.9;         /* Junta las palabras para que no haya mucho hueco */
+}
+
+.brand-sub {
+    font-family: 'Cinzel', serif; /* O la fuente que elijas */
+    font-size: 0.8rem;            /* Más chico */
+    letter-spacing: 5px;          /* Espaciado para que ocupe el mismo ancho que lo de abajo */
+    color: var(--dorado);
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.brand-main {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;            /* Más grande y dominante */
+    letter-spacing: 2px;
+    color: var(--dorado);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Personalización del menú (Navbar) */
+.navbar {
+    background-color: var(--negro-puro) !important;
+    border-bottom: 1px solid var(--dorado);
+}
+
+.navbar-start {
+    flex-grow: 1; 
+    justify-content: center;
+}
+
+.navbar-item {
+    color: white !important;
+}
+
+.navbar-item:hover {
+    color: var(--dorado) !important;
+    background-color: transparent !important;
+}
+
+/* Botón dorado personalizado */
+.button.is-dorado {
+    background-color: var(--dorado);
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.button.is-dorado:hover {
+    background-color: var(--dorado-hover);
+    color: black;
+}
+
+/* Agrandar el logo en la barra de navegación */
+.navbar-brand img {
+    max-height: 80px !important; /* Ajusta este número (80, 100, 120) hasta que te guste */
+    height: auto;
+    width: auto;
+
+}
+
+/* Estilos del Footer */
+.footer-baladron {
+    background-color: var(--negro-puro) !important;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 3rem 1.5rem 2rem !important;
+}
+
+.footer-brand {
+    align-items: flex-start !important;
+    margin-bottom: 1rem;
+}
+
+.footer-slogan {
+    color: #7a7a7a;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.footer-title {
+    color: var(--dorado);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.footer-list {
+    color: #b5b5b5;
+    line-height: 2;
+}
+
+.footer-phone {
+    color: #b5b5b5;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-phone i, .footer-address i, .footer-whatsapp i {
+    color: var(--dorado);
+    margin-right: 10px;
+}
+
+.footer-phone a, .footer-address a {
+    color: inherit;
+    text-decoration: none;
+}
+.footer-address {
+    color: #b5b5b5;
+}
+
+.footer-divider {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 1px;
+    margin: 2rem 0;
+}
+
+.footer-copyright {
+    color: #4a4a4a;
+    font-size: 0.75rem;
+}
+
+/* Estilos para el botón flotante */
+.wpp-flotante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px; /* Separación del borde inferior */
+    right: 30px;  /* Separación del borde derecho */
+    background-color: var(--dorado);
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    z-index: 1000; /* Para que siempre esté por encima de todo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.wpp-flotante:hover {
+    transform: scale(1.1); /* Agranda un poquito */
+    background-color: var(--dorado-hover);
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.7);
+}
