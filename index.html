@@ -10,100 +10,75 @@
     <title>Casa Baladron</title>
 </head>
 <body>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="container is-fluid">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="./index.html">
-        <img src="./styles/img/logo_cocheria.png" alt="Logo Casa Baladron">
-      </a>
+    <div id="header-placeholder"></div>
 
-        <a class="navbar-item" href="/">
-        <div class="brand-container">
-            <span class="brand-sub">CASA</span>
-            <span class="brand-main">BALADRON</span>
+    <section id="inicio" class="hero is-large is-dark" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/fondo-principal.webp'); background-size: cover; background-position: center;">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1" style="font-family: 'Cinzel', serif; color: var(--dorado); letter-spacing: 2px;">
+                    CASA BALADRÓN
+                </h1>
+                <h2 class="subtitle is-3">Dignidad, Respeto y Contención</h2>
+                <p class="is-size-4 mb-5">Atención las 24 horas.</p>
+                <a href="tel:42046470" class="button is-dorado is-large is-rounded">
+                    <i class="fas fa-phone-alt mr-2"></i> URGENCIAS 24HS
+                </a>
+            </div>
         </div>
-        </a>
+    </section>
 
-      <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item mx-3">INICIO</a>
-        <a class="navbar-item mx-3">LA EMPRESA</a>
-        <a class="navbar-item mx-3">SERVICIOS</a>
-        <a class="navbar-item mx-3">SALAS</a>
-        <a class="navbar-item mx-3">CONTACTO</a>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-            <a class="button is-dorado is-rounded">
-              <span class="icon">
-                <i class="fas fa-phone"></i>
-              </span>
-              <span>URGENCIAS 24HS</span>
-            </a>
+    <section id="empresa" class="section has-background-black py-6">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <h2 class="title is-2" style="color: var(--dorado); font-family: 'Cinzel', serif;">Nuestra Trayectoria</h2>
+                    <p class="is-size-5 has-text-grey-light">
+                        En <b>Casa Baladrón</b>, entendemos que cada despedida merece un entorno de paz y respeto absoluto. 
+                        Somos una empresa familiar dedicada a brindar contención a las familias de Avellaneda en sus momentos más difíciles.
+                    </p>
+                    <p class="is-size-5 has-text-grey-light mt-4">
+                        Nuestra trayectoria se basa en la honestidad y la calidez humana, asegurando que cada detalle sea cuidado con la máxima profesionalidad.
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <figure class="image is-4by3">
+                        <img src="img/empresa-fachada.webp" alt="Casa Baladrón Avellaneda" style="border: 2px solid var(--dorado); border-radius: 8px;">
+                    </figure>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</nav>
+    </section>
 
-<footer class="footer footer-baladron">
-  <div class="container is-fluid">
-    <div class="columns is-multiline">
-      
-      <div class="column is-4">
-        <div class="brand-container footer-brand">
-          <span class="brand-sub">CASA</span>
-          <span class="brand-main">BALADRÓN</span>
+    <section id="servicios" class="section has-background-dark py-6">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2" style="color: var(--dorado); font-family: 'Cinzel', serif;">Servicios Integrales</h2>
+            </div>
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <div class="p-5" style="border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px;">
+                        <i class="fas fa-church fa-3x mb-4" style="color: var(--dorado);"></i>
+                        <h3 class="title is-4" style="color: white;">Salas Velatorias</h3>
+                        <p class="has-text-grey-light mb-4">Instalaciones modernas y climatizadas para mayor comodidad.</p>
+                        <a href="salas.html" class="button is-outline-gold is-small">VER SALAS</a>
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <div class="p-5" style="border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px;">
+                        <i class="fas fa-car-side fa-3x mb-4" style="color: var(--dorado);"></i>
+                        <h3 class="title is-4" style="color: white;">Traslados</h3>
+                        <p class="has-text-grey-light mb-4">Unidades de última generación para todo el país.</p>
+                        <a href="servicios.html" class="button is-outline-gold is-small">MÁS INFO</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="footer-slogan">"Trayectoria y respeto acompañando a las familias."</p>
-      </div>
+    </section>
 
-      <div class="column is-4">
-        <h4 class="footer-title">Servicios</h4>
-        <ul class="footer-list">
-          <li>Sepelios de lujo</li>
-          <li>Traslados nacionales</li>
-          <li>Cremaciones</li>
-        </ul>
-      </div>
+    <div id="footer-placeholder"></div>
 
-      <div class="column is-4">
-        <h4 class="footer-title">Atención Permanente</h4>
-        <p class="footer-phone">
-          <i class="fas fa-phone-alt"></i> 
-          <a href="tel:42046470">4204-6470</a>
-        </p>
-        
-        <p class="footer-phone footer-whatsapp">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/5491163834971" target="_blank" rel="noopener noreferrer">11 63834971</a>
-        </p>
-        <p class="footer-address">
-          <i class="fas fa-map-marker-alt"></i> 
-          <a href="https://maps.app.goo.gl/1rLiFNtyCdeh1PZRA" target="_blank" rel="noopener noreferrer">Cnel. Lacarra 1718, Avellaneda</a>
-        </p>
-      </div>
-
-    </div>
-
-    <hr class="footer-divider">
-    
-    <div class="has-text-centered footer-copyright">
-      <p>&copy; 2024 Casa Baladrón. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/54911XXXXXXXX" class="wpp-flotante" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
+    <script src="scripts/components-loader.js"></script>
+    <script src="scripts/navbar-init.js"></script>
+    <script src="scripts/init.js"></script>
 </body>
 </html>
